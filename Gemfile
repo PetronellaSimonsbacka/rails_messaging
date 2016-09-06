@@ -14,21 +14,17 @@ gem 'devise'
 gem 'mailboxer'
 
 
-
 group :development do
   gem 'web-console', '~> 2.0'
   gem 'spring'
 end
 
 group :development, :test do
+  gem 'cucumber-rails', require: false
+  gem 'database_cleaner'
   gem 'rspec-rails'
   gem 'shoulda-matchers'
   gem 'factory_girl_rails'
-end
-
-group :development, :test do
-  gem 'cucumber-rails', require: false
-  gem 'database_cleaner'
 end
 
 group :production do
