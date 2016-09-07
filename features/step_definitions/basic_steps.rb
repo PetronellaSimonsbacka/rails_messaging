@@ -1,5 +1,5 @@
 Given(/^I am on the landing page$/) do
-  visit '/'
+  visit root_path
 end
 
 Given(/^I click on the "([^"]*)" link$/) do |link|
@@ -10,13 +10,15 @@ Then(/^I should be on the registration page$/) do
   expect(current_path).to eq '/users/sign_up'
 end
 
-When(/^I fill in "([^"]*)" with "([^"]*)"$/) do |arg1, arg2|
-  pending # Write code here that turns the phrase above into concrete actions
+When(/^I fill in "([^"]*)" with "([^"]*)"$/) do |element, text|
+  fill_in element, with: text
 end
 
 When(/^fill in "([^"]*)" with "([^"]*)"$/) do |arg1, arg2|
   pending # Write code here that turns the phrase above into concrete actions
 end
+
+
 
 When(/^I click the "([^"]*)" button$/) do |arg1|
   pending # Write code here that turns the phrase above into concrete actions
