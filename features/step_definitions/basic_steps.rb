@@ -14,16 +14,10 @@ When(/^I fill in "([^"]*)" with "([^"]*)"$/) do |element, text|
   fill_in element, with: text
 end
 
-When(/^fill in "([^"]*)" with "([^"]*)"$/) do |arg1, arg2|
-  pending # Write code here that turns the phrase above into concrete actions
+When(/^I click the "([^"]*)" button$/) do |link|
+  click_link_or_button('Create')
 end
 
-
-
-When(/^I click the "([^"]*)" button$/) do |arg1|
-  pending # Write code here that turns the phrase above into concrete actions
-end
-
-Then(/^I should see "([^"]*)"$/) do |arg1|
-  pending # Write code here that turns the phrase above into concrete actions
+Then(/^I should see "([^"]*)"$/) do |flash|
+  expect(page).to have_content('Welcome! You have signed up successfully.')
 end
