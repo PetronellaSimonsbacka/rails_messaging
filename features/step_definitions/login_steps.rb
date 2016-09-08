@@ -25,3 +25,9 @@ end
 Then(/^I should see "([^"]*)"$/) do |flash|
   expect(page).to have_content('Signed in successfully.')
 end
+
+Given(/^the following user exist:$/) do |table|
+  table.hashes.each do |hash|
+    FactoryGirl.create(:user, hash)
+  end
+end
