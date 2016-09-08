@@ -12,6 +12,7 @@ gem 'chosen-rails'
 gem 'bootstrap-sass'
 gem 'devise'
 gem 'mailboxer'
+gem 'coveralls'
 
 
 group :development do
@@ -20,12 +21,13 @@ group :development do
 end
 
 group :development, :test do
-
   gem 'cucumber-rails', require: false
   gem 'database_cleaner'
   gem 'rspec-rails'
   gem 'shoulda-matchers'
   gem 'factory_girl_rails'
+  gem 'pry'
+  gem 'pry-byebug'
 end
 
 group :production do
