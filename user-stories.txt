@@ -1,0 +1,39 @@
+As a visitor
+In order to access the mailing system
+I would like to see a landing page
+
+As a visitor
+In order to access the system functionality
+I would like to create an account
+
+As a user
+In order to log in
+I would see the log in page
+
+As a user
+In order to notice I am logged in
+I would like to see a welcome message when I log in
+
+As a user
+In order to access my inbox
+I would like to see the inbox page
+
+As a user
+In order to send mails
+I would like to see the compose page
+
+As a user
+In order to to view my sent mails
+I would like to see the sent-mails page
+
+As a user
+In order to view my trashed mails
+I would like to see the trash page
+
+As a user
+In order to log out
+I would like to be able to log out
+
+As a user
+In order to notice I am logged out
+I would like to see a message when I log out
